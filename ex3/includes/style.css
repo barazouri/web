@@ -70,7 +70,7 @@ header,nav,main,footer,aside{
 
 
 }
-#box1_layout1{
+#wrapper_layout_1 #box1{
      display: block;
     position: relative;
     width: 849px;
@@ -79,7 +79,7 @@ header,nav,main,footer,aside{
     float: right;
 
 }
- #box1_layout1 article{
+#wrapper_layout_1 #box1 article{
     position: absolute;
     width: 126px;
     height: 94px;
@@ -91,7 +91,7 @@ header,nav,main,footer,aside{
 #wrapper_layout_1 main{
      position: relative;
  }
-#box2_layout1{
+ #wrapper_layout_1 #box2{
     position: absolute;
     width: 692px;
     height: 175px;
@@ -154,7 +154,7 @@ header,nav,main,footer,aside{
 }
 
 
-.box1_layout2{
+#wrapper_layout_2 .box1{
     position: absolute;
     width: 212px;
     height: 366px;
@@ -162,7 +162,7 @@ header,nav,main,footer,aside{
     left: 30px;
 
 }
-.box2_layout2{
+#wrapper_layout_2 .box2{
     position: absolute;
     width: 212px;
     height: 560px;
@@ -170,7 +170,7 @@ header,nav,main,footer,aside{
     left: 272px;
 
 }
-.box3_layout2{
+#wrapper_layout_2 .box3{
     position: absolute;
     width: 212px;
     height: 223px;
@@ -179,7 +179,7 @@ header,nav,main,footer,aside{
 
 
 }
-.box4_layout2{
+#wrapper_layout_2 .box4{
     position: absolute;
     width: 212px;
     height: 500px;
@@ -188,7 +188,7 @@ header,nav,main,footer,aside{
     left: 30px;
 
 }
-.box5_layout2{
+#wrapper_layout_2 .box5{
     position: absolute;
     width: 212px;
     height: 306px;
@@ -221,4 +221,110 @@ header,nav,main,footer,aside{
 }
 #wrapper_layout_2 a:hover{
     background-color: #b94a48;
+}
+
+/*     ______css layout_3_______      */
+
+#wrapper_layout_3
+{
+    width: 80%;
+    margin: 0px auto;
+
+}
+#wrapper_layout_3 header{
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 500px; 
+}
+#wrapper_layout_3 #logo{
+    position: absolute;
+    height: 78px;
+    width: 78px;
+    background: url("../images/logo.png")no-repeat;
+    left: 21px;
+    top: 23px;
+}
+#wrapper_layout_3 nav{
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 62px;
+    top: 438px;
+    background-color:#b94a48; 
+}
+#wrapper_layout_3 nav a{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: sans-serif;
+    height: 39px;
+    width: 167px;
+    padding-top: 23px;
+}
+#wrapper_layout_3 nav a:hover {
+    background-color: #333333;
+}
+#wrapper_layout_3 .layout_1{
+    position: absolute;
+    text-align: center;
+
+
+}
+#wrapper_layout_3 .layout_2{
+
+    position: absolute;
+    left: 167px;
+    text-align: center;
+
+}
+#wrapper_layout_3 .layout_3{
+
+    position: absolute;
+    left: 334px;
+    text-align: center;
+
+
+}
+#wrapper_layout_3 section{
+    height: 250px;
+    width: 250px;
+
+}
+#wrapper_layout_3 section:hover{
+    background-color:#ffffff; 
+}
+#wrapper_layout_3 .box1{
+    float: left;
+    background-color: #1f0806;
+}
+#wrapper_layout_3 .box2{
+    float: left;
+    background-color: #5e1711;
+}
+#wrapper_layout_3 .box3{
+    float: left;
+    background-color: #7e1e17;
+
+}
+#wrapper_layout_3 .box4{
+    float: left;
+    background-color: #370d0a;
+
+}
+#wrapper_layout_3 header img{
+    position: absolute;
+    top: 207px;
+    left: 207px;
+    width: 86px;
+    height: 86px;
+    background: url("../images/plus.png")no-repeat;
+}
+@media (min-width: 1250px)
+{
+    #myMain{
+        height: 500px;
+        width: 1000px;
+        background-color: #9d261d;
+        float:left;
+    }
 }
