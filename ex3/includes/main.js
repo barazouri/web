@@ -22,6 +22,5 @@ function randomOpacity(){
     var opac=0;
     opac=(Math.random());
     console.log(opac);
-    return opac;
-   
+    return opac;  
 }

@@ -43,8 +43,9 @@ header,nav,main,footer,aside{
     height: 38px;
     padding-top: 19.25px;
 }
-#wrapper_layout_1 nav a:hover {
-    background-color: #333333;
+#wrapper_layout_1 .layout_1{
+     background-color: #333333;
+
 }
 #wrapper_layout_1 .layout_1{
     position: absolute;
@@ -208,7 +209,7 @@ header,nav,main,footer,aside{
     padding-bottom: 20.5px;
     padding-left: 6px;
 }
-#wrapper_layout_2 a:hover{
+#wrapper_layout_2 .layout_2{
     background-color: #b94a48;
 }
 
@@ -249,7 +250,7 @@ header,nav,main,footer,aside{
     width: 167px;
     padding-top: 23px;
 }
-#wrapper_layout_3 nav a:hover {
+#wrapper_layout_3 .layout_3 {
     background-color: #333333;
 }
 #wrapper_layout_3 .layout_1{
