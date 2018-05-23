@@ -44,15 +44,11 @@ header,nav,main,footer,aside{
     padding-top: 19.25px;
 }
 #wrapper_layout_1 .layout_1{
-     background-color: #333333;
-
-}
-#wrapper_layout_1 .layout_1{
+    background-color: #333333;
     position: absolute;
     text-align: center;
 }
 #wrapper_layout_1 .layout_2{
-
     position: absolute;
     left: 242px;
     text-align: center;
@@ -250,9 +246,6 @@ header,nav,main,footer,aside{
     width: 167px;
     padding-top: 23px;
 }
-#wrapper_layout_3 .layout_3 {
-    background-color: #333333;
-}
 #wrapper_layout_3 .layout_1{
     position: absolute;
     text-align: center;
@@ -267,7 +260,7 @@ header,nav,main,footer,aside{
 
 }
 #wrapper_layout_3 .layout_3{
-
+    background-color: #333333;
     position: absolute;
     left: 334px;
     text-align: center;
