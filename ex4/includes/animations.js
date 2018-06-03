@@ -547,7 +547,7 @@ function checkForm(form)
     form.appendChild(err);   
     return false;
   }
-  window.open("../pokemon-battle/index.html");
+  window.open("http://shenkar.html5-book.co.il/2017-2018/web1/dev_40/ex4/pokemon-battle/index.html");
   return true;
 }
 

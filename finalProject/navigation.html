@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy park</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="includes/jquery-3.1.1.min.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="includes/navigation.css" />
+    <script src="includes/navigation.js" async></script>
+    
+</head>
+<body>
+<div id="wrapper">
+  <main id="myMain">
+        <div class="vl"></div>
+        <div class="vl1"></div>
+      <section class="turn">עוד 200 מטר פנה שמאלה לחניה <i class="fa fa-reply" aria-hidden="true"></i>
+      </section>
+      <button type="button" id="btn-secondary" class="btn btn-secondary" onclick="buttonClick()">דווח על חניה</button>
+        <nav role="navigation">
+                <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input id="myInput" type="checkbox" onclick="clickCheckBox()"/>
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  
+                  <ul id="menu">
+                    <li id="user"><i class="fa fa-cog" style="position: absolute;top: 7px;left: 17px;font-size: 36px;color: black;"></i></li>
+                    <a href="#"><li class="colect">הזמנת חניה מראש</li></a>
+                    <a href="#"><li class="colect">הזמנת חניה קבועה</li></a>
+                    <a href="#"><li class="colect">וידוא תקינות חניה</li></a>
+                    <a href="#"><li class="colect">דיווח על פינוי עתידי</li></a>
+                  </ul>
+                </div>
+              </nav>
+              <button type="button" class="btn btn-dark">10:45<br>ק״מ 0.1 &nbsp;דק׳ 1</button>
+  </main>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
