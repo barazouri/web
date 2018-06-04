@@ -18,7 +18,7 @@ body {
     margin: auto;
 }
 
-#wrapper header {
+header {
     text-align: center;
     vertical-align: middle;
     background-color: #75a9f9;
@@ -26,6 +26,7 @@ body {
     margin: 0px;
     line-height: 685%;
    font-size: 165%;
+   color: white;
 }
 
 

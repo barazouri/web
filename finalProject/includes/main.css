@@ -129,6 +129,7 @@ a:hover{
       top: 31px;
       height: 101px;
       font-size: 26px;
+      font-family: 'Heebo';
     }
     #user{
       background-color: aqua;
@@ -160,17 +161,23 @@ a:hover{
 
   .colect{
     display: block;
+    position: relative;
+    width: 68.7vw;
+    left: -49px;
     padding: 10px 0;
     font-size: 35px;
     height: 178px;
-    padding-top: 77px;
+    padding-top: 56px;
+    text-align: center;
 
   }
   .colect:hover {
+    position: relative;
     background-color: #232323;
     width: 68.7vw;
-    margin-left: -49px;
-    padding-left: 49px;
+    left: -49px;
+    text-align: center;
+
   }
   #menuToggle{
       display: block;
@@ -265,6 +272,30 @@ a:hover{
     top: -922px;
     width: 216px;
   }
+  .fa-clock-o:before {
+    position: relative;
+    left: -3px;
+    top: 9px;
+    font-size: 63px;
+}
+.fa-automobile:before, .fa-car:before{
+    position: relative;
+    left: -1px;
+    top: 9px;
+    font-size: 63px;
+}
+.fa-check-circle:before{
+    position: relative;
+    left: -3px;
+    top: 9px;
+    font-size: 63px;
+}
+.fa-file-text-o:before{
+    position: relative;
+    left: -1px;
+    top: 9px;
+    font-size: 63px;
+}
 }
        /*this is for tablet*/
 @media(max-width:480px){
@@ -307,7 +338,8 @@ a:hover{
       width: 300px;
       position: absolute;
       left: 97px;
-      top: 31px
+      top: 31px;
+      font-family: 'Heebo';
     }
     #user{
       background-color: aqua;
@@ -343,17 +375,22 @@ a:hover{
 
   .colect{
     display: block;
+    position: relative;
+    width: 68.9vw;
+    left: -49px;
     padding: 10px 0;
     font-size: 22px;
     height: 100px;
     padding-top: 31px;
+    text-align: center;
 
   }
   .colect:hover {
+    position: relative;
     background-color: #232323;
     width: 68.9vw;
-    margin-left: -49px;
-    padding-left: 49px;
+    left: -49px;
+    text-align: center;
   }
   #menuToggle
   {
@@ -452,5 +489,31 @@ a:hover{
     top: -600px;
     width: 124px;
   }
+ 
+    .fa-clock-o:before {
+      position: relative;
+      left: -37px;
+      left: -13px;
+      font-size: 35px;
+  }
+  .fa-automobile:before, .fa-car:before{
+    position: relative;
+      left: -34px;
+      left: -13px;
+      font-size: 35px;
+  }
+  .fa-check-circle:before{
+      position: relative;
+      left: -41px;
+      left: -15px;
+      font-size: 35px;
+  }
+  .fa-file-text-o:before{
+    position: relative;
+      left: -34px;
+      left: -15px;
+      font-size: 35px;
+  }
+  
 }
 /*        this is for mobile */

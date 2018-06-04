@@ -25,6 +25,7 @@ window.onload= function() {
             l.style.margin = "0px";
             l.style.lineHeight = "680%";
             l.style.fontSize="100%";
+            l.style.color="black";
             document.getElementById("myList").appendChild(a);
     }
   };

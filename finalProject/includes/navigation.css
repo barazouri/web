@@ -24,26 +24,14 @@ a:hover{
   color: white;
   text-decoration: none;
 }
-
-/* a:hover
-{
-  background-color: #232323;
-} */
-
-
-
 /*
  * Just a quick hamburger
  */
-
-
-#menuToggle span:first-child
-{
+#menuToggle span:first-child{
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2){
   transform-origin: 0% 100%;
 }
 
@@ -51,24 +39,21 @@ a:hover{
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span{
   visibility: hidden;
 }
 
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3){
   visibility: hidden;
 }
 
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2){
   visibility: hidden;  
 }
 
@@ -151,17 +136,23 @@ a:hover{
 
   .colect{
     display: block;
+    position: relative;
+    width: 68.7vw;
+    left: -49px;
     padding: 10px 0;
     font-size: 35px;
     height: 178px;
-    padding-top: 77px;
+    padding-top: 56px;
+    text-align: center;
 
   }
   .colect:hover {
+    position: relative;
     background-color: #232323;
     width: 68.7vw;
-    margin-left: -49px;
-    padding-left: 49px;
+   left: -49px;
+   text-align: center;
+
   }
   #menuToggle{
       display: block;
@@ -302,6 +293,30 @@ a:hover{
     left: 525px;
     top: 288px;
 }
+.fa-clock-o:before {
+  position: relative;
+  left: -3px;
+  top: 9px;
+  font-size: 63px;
+}
+.fa-automobile:before, .fa-car:before{
+  position: relative;
+  left: -1px;
+  top: 9px;
+  font-size: 63px;
+}
+.fa-check-circle:before{
+  position: relative;
+  left: -3px;
+  top: 9px;
+  font-size: 63px;
+}
+.fa-file-text-o:before{
+  position: relative;
+  left: -1px;
+  top: 9px;
+  font-size: 63px;
+}
 }
        /*this is for tablet*/
 @media(max-width:480px){
@@ -373,17 +388,23 @@ a:hover{
 
   .colect{
     display: block;
+    position: relative;
+    width: 68.9vw;
+    left: -49px;
     padding: 10px 0;
     font-size: 22px;
     height: 100px;
     padding-top: 31px;
+    text-align: center;
 
   }
   .colect:hover {
+    position: relative;
     background-color: #232323;
     width: 68.9vw;
-    margin-left: -49px;
-    padding-left: 49px;
+    left: -49px;
+    text-align: center;
+
   }
   #menuToggle
   {
@@ -533,6 +554,30 @@ a:hover{
     position: absolute;
     left: 322px;
     top: 182px;
+}
+.fa-clock-o:before {
+  position: relative;
+  left: -37px;
+  left: -13px;
+  font-size: 35px;
+}
+.fa-automobile:before, .fa-car:before{
+position: relative;
+  left: -34px;
+  left: -13px;
+  font-size: 35px;
+}
+.fa-check-circle:before{
+  position: relative;
+  left: -41px;
+  left: -15px;
+  font-size: 35px;
+}
+.fa-file-text-o:before{
+position: relative;
+  left: -34px;
+  left: -15px;
+  font-size: 35px;
 }
 }
 /*        this is for mobile */
