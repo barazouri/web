@@ -1,4 +1,4 @@
-body
+#wrapper_index body
 {
   margin: 0;
   padding: 0;
@@ -7,20 +7,22 @@ body
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
-#wrapper{
-  width: 90%;
-  margin: 0 auto;
-}
 .clear{
   clear: both;
 }
-a
+/***************************                 css for index       ****************************/
+
+#wrapper_index{
+  width: 90%;
+  margin: 0 auto;
+}
+#wrapper_index a
 {
   text-decoration: none;
   color: #232323;
   transition: color 0.3s ease;
 }
-a:hover{
+#wrapper_index a:hover{
   color: white;
   text-decoration: none;
 }
@@ -37,12 +39,12 @@ a:hover{
  */
 
 
-#menuToggle span:first-child
+#wrapper_index #menuToggle span:first-child
 {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
+#wrapper_index #menuToggle span:nth-last-child(2)
 {
   transform-origin: 0% 100%;
 }
@@ -51,7 +53,7 @@ a:hover{
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
+#wrapper_index #menuToggle input:checked ~ span
 {
   visibility: hidden;
 }
@@ -59,7 +61,7 @@ a:hover{
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
+#wrapper_index #menuToggle input:checked ~ span:nth-last-child(3)
 {
   visibility: hidden;
 }
@@ -67,7 +69,7 @@ a:hover{
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
+ #wrapper_index #menuToggle input:checked ~ span:nth-last-child(2)
 {
   visibility: hidden;  
 }
@@ -80,13 +82,13 @@ a:hover{
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul{
+ #wrapper_index #menuToggle input:checked ~ ul{
   transform: none;
 }
 
 
 @media(min-width: 481px) and (max-width:850px){
-  nav{
+  #wrapper_index nav{
     display: block;
     width: 326px;
     height: 721px;
@@ -95,12 +97,12 @@ a:hover{
       width: 100px;
       height: 100px;
     } */
-      main{
+    #wrapper_index main{
           width: 100%;
           height: 1149px;
           background: url("../images/bigger\ map.png");
       }
-      .btn-secondary{
+      #wrapper_index .btn-secondary{
         position: absolute;
         left: 551px;
         top: 900px;
@@ -110,7 +112,7 @@ a:hover{
         background-color: #e6e6e6;
         color: black;
     }
-    #arrow {
+    #wrapper_index #arrow {
       position: absolute;
       border: solid black;
       border-width: 0 7px 7px 0;
@@ -122,7 +124,7 @@ a:hover{
       top: 574px;
     }
     
-    .form-control{
+    #wrapper_index .form-control{
       width: 344px;
       position: absolute;
       left: 28%;
@@ -131,17 +133,17 @@ a:hover{
       font-size: 26px;
       font-family: 'Heebo';
     }
-    #user{
+    #wrapper_index #user{
       background-color: aqua;
       width: 68.7vw;
       height: 200px;
       margin-top: -44px;
       margin-left: -49px;
     }
-    form{
+    #wrapper_index form{
     float: left;
     }
-    #menu{
+    #wrapper_index #menu{
     visibility: hidden;
     position: absolute;
     width: 69vw;
@@ -159,7 +161,7 @@ a:hover{
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 
-  .colect{
+  #wrapper_index .colect{
     display: block;
     position: relative;
     width: 68.7vw;
@@ -171,7 +173,7 @@ a:hover{
     text-align: center;
 
   }
-  .colect:hover {
+  #wrapper_index .colect:hover {
     position: relative;
     background-color: #232323;
     width: 68.7vw;
@@ -179,7 +181,7 @@ a:hover{
     text-align: center;
 
   }
-  #menuToggle{
+  #wrapper_index #menuToggle{
       display: block;
       position: relative;
       top: 922px;
@@ -188,7 +190,7 @@ a:hover{
       -webkit-user-select: none;
       user-select: none;
   }
-  #menuToggle span
+  #wrapper_index #menuToggle span
   {
     display: block;
     width: 87px;
@@ -202,7 +204,7 @@ a:hover{
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
   }
 
-  #mySection{
+  #wrapper_index #mySection{
     position: absolute;
     width: 51px;
     height: 1150px;
@@ -211,44 +213,44 @@ a:hover{
     left: 74vw;
     top: 0px;
   }
-  #userName{
+  #wrapper_index #userName{
     color: black;
     text-align: center;
   }
-  #userImg{
+  #wrapper_index #userImg{
     width: 130px;
     height: 126px;
     margin-left: 26.5vw;
     margin-top: 8px;
   }
-  #park1{
+  #wrapper_index #park1{
     position: absolute;
     top: 467px;
     left: 119px;
   }
-  #park2{
+  #wrapper_index #park2{
     position: absolute;
     top: 244px;
     left: 300px;
   }
-  #park3{
+  #wrapper_index #park3{
     position: absolute;
     top: 300px;
     left: 490px;
   }
-  #thanks{
+  #wrapper_index #thanks{
     position: absolute;
     top: 887px;
     left: 69%;
   }
-  #points{
+  #wrapper_index #points{
     position: absolute;
     left: 64%;
     top: 995px;
     color: black;
     font-size: 30px;
   }
-  #menuToggle input{
+  #wrapper_index #menuToggle input{
     display: block;
     width: 98px;
     height: 84px;
@@ -263,34 +265,34 @@ a:hover{
        
    -webkit-touch-callout: none;
   }
-  .fa-gear:before, .fa-cog:before {
+  #wrapper_index .fa-gear:before, .fa-cog:before {
     font-size: 88px;
   }
-  #menuToggle input:checked{
+  #wrapper_index #menuToggle input:checked{
     height: 1150px;
     left: 408px;
     top: -922px;
     width: 216px;
   }
-  .fa-clock-o:before {
+  #wrapper_index .fa-clock-o:before {
     position: relative;
     left: -3px;
     top: 9px;
     font-size: 63px;
 }
-.fa-automobile:before, .fa-car:before{
+#wrapper_index .fa-automobile:before, .fa-car:before{
     position: relative;
     left: -1px;
     top: 9px;
     font-size: 63px;
 }
-.fa-check-circle:before{
+#wrapper_index .fa-check-circle:before{
     position: relative;
     left: -3px;
     top: 9px;
     font-size: 63px;
 }
-.fa-file-text-o:before{
+#wrapper_index .fa-file-text-o:before{
     position: relative;
     left: -1px;
     top: 9px;
@@ -299,21 +301,21 @@ a:hover{
 }
        /*this is for tablet*/
 @media(max-width:480px){
-  nav{
+  #wrapper_index nav{
     display: block;
     width: 326px;
     height: 721px;
   }
-    form{
+  #wrapper_index form{
       width: 100px;
       height: 100px;
     }
-      main{
+    #wrapper_index main{
           width: 100%;
           height: 735px;
           background: url("../images/clean\ map.png")no-repeat;
       }
-      .btn-secondary{
+      #wrapper_index .btn-secondary{
         position: absolute;
         left: 293px;
         top: 591px;
@@ -322,7 +324,7 @@ a:hover{
         background-color: #e6e6e6;
         color: black;
     }
-    #arrow {
+    #wrapper_index #arrow {
       position: absolute;
       border: solid black;
       border-width: 0 4px 4px 0;
@@ -334,24 +336,24 @@ a:hover{
       top:360.5px;
     }
     
-    .form-control{
+    #wrapper_index .form-control{
       width: 300px;
       position: absolute;
       left: 97px;
       top: 31px;
       font-family: 'Heebo';
     }
-    #user{
+    #wrapper_index #user{
       background-color: aqua;
       width: 68.9vw;
       height: 200px;
       margin-top: -44px;
       margin-left: -49px;
     }
-    form{
+    #wrapper_index form{
     float: left;
     }
-    #menu
+    #wrapper_index #menu
   {
     visibility: hidden;
     position: absolute;
@@ -373,7 +375,7 @@ a:hover{
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 
-  .colect{
+  #wrapper_index .colect{
     display: block;
     position: relative;
     width: 68.9vw;
@@ -385,14 +387,14 @@ a:hover{
     text-align: center;
 
   }
-  .colect:hover {
+  #wrapper_index .colect:hover {
     position: relative;
     background-color: #232323;
     width: 68.9vw;
     left: -49px;
     text-align: center;
   }
-  #menuToggle
+  #wrapper_index #menuToggle
   {
     display: block;
     position: relative;
@@ -403,7 +405,7 @@ a:hover{
     -webkit-user-select: none;
     user-select: none;
   }
-  #menuToggle span
+  #wrapper_index #menuToggle span
   {
     display: block;
     width: 49px;
@@ -423,7 +425,7 @@ a:hover{
                 opacity 0.55s ease;
   }
 
-  #mySection{
+  #wrapper_index #mySection{
     position: absolute;
     width: 25px;
     height: 721px;
@@ -432,43 +434,43 @@ a:hover{
     left: 74vw;
     top:0px;
   }
-  #userName{
+  #wrapper_index #userName{
     color: black;
     text-align: center;
   }
-  #userImg{
+  #wrapper_index #userImg{
     width: 130px;
     height: 126px;
     margin-left: 20vw;
     margin-top: 8px;
   }
-  #park1{
+  #wrapper_index #park1{
     position: absolute;
     top: 216px;
     left: 119px;
   }
-  #park2{
+  #wrapper_index #park2{
     position: absolute;
     top: 190px;
     left: 300px;
   }
-  #park3{
+  #wrapper_index #park3{
     position: absolute;
     top: 525px;
     left: 251px;
   }
-  #thanks{
+  #wrapper_index #thanks{
     position: absolute;
     top: 538px;
     left: 294px;
   }
-  #points{
+  #wrapper_index #points{
     position: absolute;
     top: 649px;
     left: 310px;
     color: black;
   }
-  #menuToggle input{
+  #wrapper_index #menuToggle input{
     display: block;
     width: 58px;
     height: 53px;
@@ -483,32 +485,32 @@ a:hover{
     
     -webkit-touch-callout: none;
   }
-  #menuToggle input:checked{
+  #wrapper_index #menuToggle input:checked{
     height: 721px;
     left: 251px;
     top: -600px;
     width: 124px;
   }
  
-    .fa-clock-o:before {
+  #wrapper_index .fa-clock-o:before {
       position: relative;
       left: -37px;
       left: -13px;
       font-size: 35px;
   }
-  .fa-automobile:before, .fa-car:before{
+  #wrapper_index .fa-automobile:before, .fa-car:before{
     position: relative;
       left: -34px;
       left: -13px;
       font-size: 35px;
   }
-  .fa-check-circle:before{
+  #wrapper_index .fa-check-circle:before{
       position: relative;
       left: -41px;
       left: -15px;
       font-size: 35px;
   }
-  .fa-file-text-o:before{
+  #wrapper_index .fa-file-text-o:before{
     position: relative;
       left: -34px;
       left: -15px;
@@ -517,3 +519,753 @@ a:hover{
   
 }
 /*        this is for mobile */
+
+
+
+/*********************************  css for colectPark   **********************************/
+
+#wrapper_collect body {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+}
+
+
+#wrapper_collect {
+  width: 90%;
+  margin: auto;
+}
+
+#wrapper_collect header {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #75a9f9;
+  width: 100%;
+  margin: 0px;
+  line-height: 685%;
+ font-size: 165%;
+ color: white;
+}
+
+#wrapper_collect ul{
+display: contents;
+}
+
+
+
+
+#wrapper_collect > ul {
+    /*font-size: 4vh; */
+    font-size: 165.5%;
+}
+
+/*********************************  check  **********************************/
+
+#wrapper_check{
+	width: 90%;
+	margin: 0 auto;
+}
+#wrapper_check .homePage{
+	
+	text-decoration: none;
+	color: black;
+	width: 100%;
+    height: 100%;
+}
+#wrapper_check .homePage:hover{
+	text-decoration: none;
+	color: black;
+}
+#wrapper_check .blueArea {
+	position: relative;
+	width: 90%;
+	height: 104px;
+	background-color: #75a9f9;
+	text-align: center;
+}
+
+#wrapper_check .blueArea p {
+	position: relative;
+	top:30px;
+	font-size: 165%;
+	left: 5%;
+	font-family: verdana;
+	color: #ffffff;
+}
+
+#wrapper_check .checkIf {
+	position: relative;
+	text-align: center;
+}
+
+#wrapper_check .viLogo {
+	font-size: 850%;
+	color: #61cc73;
+}
+
+#wrapper_check .positiveCheck {
+	position: relative;
+	color: #61cc73;
+}
+
+#wrapper_check .attension {
+	position: relative;
+	top: 0px;
+	color: #bf2a1c;
+	font-size: 250%;
+}
+
+#wrapper_check .parkingTime {
+	font-size: 150%;
+}
+
+#wrapper_check #btn-secondary {
+	position: relative;
+    font-family: verdana;
+    font-size: 20px;
+    width: 28%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    color: #000;
+    top: 25px;
+	text-align: center;
+}
+
+/*********************************  css for navigation  **********************************/
+
+#wrapper_navigation body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+#wrapper_navigation{
+  width: 90%;
+  margin: 0 auto;
+}
+#wrapper_navigation a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+#wrapper_navigation a:hover{
+  color: white;
+  text-decoration: none;
+}
+/*
+ * Just a quick hamburger
+ */
+ #wrapper_navigation #menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#wrapper_navigation #menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+ #wrapper_navigation #menuToggle input:checked ~ span{
+  visibility: hidden;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+ #wrapper_navigation #menuToggle input:checked ~ span:nth-last-child(3){
+  visibility: hidden;
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+ #wrapper_navigation #menuToggle input:checked ~ span:nth-last-child(2){
+  visibility: hidden;  
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+
+/*
+ * And let's slide it in from the left
+ */
+ #wrapper_navigation #menuToggle input:checked ~ ul{
+  transform: none;
+}
+
+
+@media(min-width: 481px) and (max-width:850px){
+  #wrapper_navigation nav{
+    display: block;
+    width: 326px;
+    height: 721px;
+  }
+    /* form{
+      width: 100px;
+      height: 100px;
+    } */
+    #wrapper_navigation main{
+          width: 100%;
+          height: 1149px;
+          background: url("../images/bigger\ map.png");
+      }
+      #wrapper_navigation .btn-secondary{
+        position: absolute;
+        left: 551px;
+        top: 900px;
+        font-size: 26px;
+        height: 113px;
+        width: 184px;
+        background-color: #e6e6e6;
+        color: black;
+    }
+    #wrapper_navigation #arrow {
+      position: absolute;
+      border: solid black;
+      border-width: 0 7px 7px 0;
+      display: inline-block;
+      padding: 7px;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      left: 76vw;
+      top: 574px;
+    }
+    #wrapper_navigation #user{
+      background-color: aqua;
+      width: 68.7vw;
+      height: 200px;
+      margin-top: -44px;
+      margin-left: -49px;
+    }
+    #wrapper_navigation form{
+    float: left;
+    }
+    #wrapper_navigation #menu{
+    visibility: hidden;
+    position: absolute;
+    width: 69vw;
+    height: 1149px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 45px;
+    top: -822px;
+    left: -26px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #wrapper_navigation .colect{
+    display: block;
+    position: relative;
+    width: 68.7vw;
+    left: -49px;
+    padding: 10px 0;
+    font-size: 35px;
+    height: 178px;
+    padding-top: 56px;
+    text-align: center;
+
+  }
+  #wrapper_navigation .colect:hover {
+    position: relative;
+    background-color: #232323;
+    width: 68.7vw;
+   left: -49px;
+   text-align: center;
+
+  }
+  #wrapper_navigation #menuToggle{
+      display: block;
+      position: relative;
+      top: 922px;
+      left: 76px;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+  }
+  #wrapper_navigation #menuToggle span
+  {
+    display: block;
+    width: 87px;
+    height: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+  }
+
+  #wrapper_navigation #mySection{
+    position: absolute;
+    width: 51px;
+    height: 1150px;
+    background-color: black;
+    opacity: 0.5;
+    left: 74vw;
+    top: 0px;
+  }
+  #wrapper_navigation #userName{
+    color: black;
+    text-align: center;
+  }
+  #wrapper_navigation #userImg{
+    width: 130px;
+    height: 126px;
+    margin-left: 26.5vw;
+    margin-top: 8px;
+  }
+  #wrapper_navigation #park1{
+    position: absolute;
+    top: 467px;
+    left: 119px;
+  }
+  #wrapper_navigation #park2{
+    position: absolute;
+    top: 244px;
+    left: 300px;
+  }
+  #wrapper_navigation #park3{
+    position: absolute;
+    top: 300px;
+    left: 490px;
+  }
+  #wrapper_navigation #thanks{
+    position: absolute;
+    top: 887px;
+    left: 69%;
+  }
+  #wrapper_navigation #points{
+    position: absolute;
+    left: 64%;
+    top: 995px;
+    color: black;
+    font-size: 30px;
+  }
+  #wrapper_navigation #menuToggle input{
+    display: block;
+    width: 98px;
+    height: 84px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+       
+   cursor: pointer;
+       
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+       
+   -webkit-touch-callout: none;
+  }
+  #wrapper_navigation .fa-gear:before, .fa-cog:before {
+    font-size: 88px;
+  }
+  #wrapper_navigation #menuToggle input:checked{
+    height: 1150px;
+    left: 408px;
+    top: -922px;
+    width: 216px;
+  }
+  #wrapper_navigation .btn.btn-dark{
+    position: absolute;
+    top: 862px;
+    left: 266px;
+    width: 225px;
+    height: 151px;
+    font-size: 29px;
+    opacity: 0.8;
+  }
+  #wrapper_navigation .turn{
+    background-color: black;
+    opacity: 0.8;
+    text-align: right;
+    height: 100px;
+    font-size: 36px;
+    position: absolute;
+    width: 90%;
+    color: white;
+  }
+  #wrapper_navigation .turn p{
+    position: absolute;
+    
+}
+#wrapper_navigation .fa-mail-reply:before, .fa-reply:before {
+    content: "\f112";
+    font-size: 72px;
+    position: absolute;
+    left: 68px;
+    top: 12px;
+}
+#wrapper_navigation .vl{
+    border-left: 15px solid purple;
+    height: 404px;
+    transform: rotate(-12deg);
+    position: absolute;
+    left: 582px;
+    top: 293px;
+
+}
+#wrapper_navigation .vl1{
+    border-left: 15px solid purple;
+    height: 43px;
+    transform: rotate(74deg);
+    position: absolute;
+    left: 525px;
+    top: 288px;
+}
+#wrapper_navigation .fa-clock-o:before {
+  position: relative;
+  left: -3px;
+  top: 9px;
+  font-size: 63px;
+}
+#wrapper_navigation .fa-automobile:before, .fa-car:before{
+  position: relative;
+  left: -1px;
+  top: 9px;
+  font-size: 63px;
+}
+#wrapper_navigation .fa-check-circle:before{
+  position: relative;
+  left: -3px;
+  top: 9px;
+  font-size: 63px;
+}
+#wrapper_navigation .fa-file-text-o:before{
+  position: relative;
+  left: -1px;
+  top: 9px;
+  font-size: 63px;
+}
+}
+       /*this is for tablet*/
+@media(max-width:480px){
+  #wrapper_navigation nav{
+    display: block;
+    width: 326px;
+    height: 721px;
+  }
+  #wrapper_navigation form{
+      width: 100px;
+      height: 100px;
+    }
+    #wrapper_navigation main{
+          width: 100%;
+          height: 735px;
+          background: url("../images/clean\ map.png")no-repeat;
+      }
+      #wrapper_navigation .btn-secondary{
+        position: absolute;
+        left: 320px;
+        top: 591px;
+        height: 52px;
+        width: 111px;
+        background-color: #e6e6e6;
+        color: black;
+    }
+    #wrapper_navigation #arrow {
+      position: absolute;
+      border: solid black;
+      border-width: 0 4px 4px 0;
+      display: inline-block;
+      padding: 7px;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      left: 75vw;
+      top:360.5px;
+    }
+    #wrapper_navigation #user{
+      background-color: aqua;
+      width: 68.9vw;
+      height: 200px;
+      margin-top: -44px;
+      margin-left: -49px;
+    }
+    #wrapper_navigation form{
+    float: left;
+    }
+    #wrapper_navigation #menu
+  {
+    visibility: hidden;
+    position: absolute;
+    width: 69vw;
+    height: 721px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 45px;
+    top: -500px;
+    
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #wrapper_navigation .colect{
+    display: block;
+    position: relative;
+    width: 68.9vw;
+    left: -49px;
+    padding: 10px 0;
+    font-size: 22px;
+    height: 100px;
+    padding-top: 31px;
+    text-align: center;
+
+  }
+  #wrapper_navigation .colect:hover {
+    position: relative;
+    background-color: #232323;
+    width: 68.9vw;
+    left: -49px;
+    text-align: center;
+
+  }
+  #wrapper_navigation #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 600px;
+    left: 50px;
+    width: 100px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #wrapper_navigation #menuToggle span
+  {
+    display: block;
+    width: 49px;
+    height: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: black;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #wrapper_navigation #mySection{
+    position: absolute;
+    width: 25px;
+    height: 721px;
+    background-color: black;
+    opacity: 0.5;
+    left: 74vw;
+    top:0px;
+  }
+  #wrapper_navigation #userName{
+    color: black;
+    text-align: center;
+  }
+  #wrapper_navigation #userImg{
+    width: 130px;
+    height: 126px;
+    margin-left: 20vw;
+    margin-top: 8px;
+  }
+  #wrapper_navigation #park1{
+    position: absolute;
+    top: 216px;
+    left: 119px;
+  }
+  #wrapper_navigation #park2{
+    position: absolute;
+    top: 190px;
+    left: 300px;
+  }
+  #wrapper_navigation #park3{
+    position: absolute;
+    top: 525px;
+    left: 251px;
+  }
+  #wrapper_navigation #thanks{
+    position: absolute;
+    top: 538px;
+    left: 294px;
+  }
+  #wrapper_navigation #points{
+    position: absolute;
+    top: 649px;
+    left: 310px;
+    color: black;
+  }
+  #wrapper_navigation #menuToggle input{
+    display: block;
+    width: 58px;
+    height: 53px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+  }
+  #wrapper_navigation #menuToggle input:checked{
+    height: 721px;
+    left: 251px;
+    top: -600px;
+    width: 124px;
+  }
+  #wrapper_navigation .btn.btn-dark{
+    position: absolute;
+    top: 581px;
+    left: 150px;
+    width: 146px;
+    opacity: 0.8;
+  }
+  #wrapper_navigation .turn{
+    background-color: black;
+    opacity: 0.8;
+    text-align: right;
+    height: 100px;
+    font-size: 36px;
+    position: absolute;
+    width: 90%;
+    font-size: 25px;
+    color: white;
+  }
+  #wrapper_navigation .turn p{
+      position: absolute;
+
+  }
+  #wrapper_navigation .fa-mail-reply:before, .fa-reply:before {
+    content: "\f112";
+    font-size: 72px;
+    position: absolute;
+    left: 68px;
+    top: 12px;
+}
+#wrapper_navigation .fa-mail-reply:before, .fa-reply:before {
+    content: "\f112";
+    font-size: 46px;
+    position: absolute;
+    left: 17px;
+    top: 36px;
+}
+#wrapper_navigation .vl{
+    border-left: 11px solid purple;
+    height: 246px;
+    transform: rotate(-12deg);
+    position: absolute;
+    left: 363px;
+    top: 194px;
+
+}
+#wrapper_navigation .vl1{
+    border-left: 11px solid purple;
+    height: 43px;
+    transform: rotate(74deg);
+    position: absolute;
+    left: 322px;
+    top: 182px;
+}
+#wrapper_navigation .fa-clock-o:before {
+  position: relative;
+  left: -37px;
+  left: -13px;
+  font-size: 35px;
+}
+#wrapper_navigation .fa-automobile:before, .fa-car:before{
+position: relative;
+  left: -34px;
+  left: -13px;
+  font-size: 35px;
+}
+#wrapper_navigation .fa-check-circle:before{
+  position: relative;
+  left: -41px;
+  left: -15px;
+  font-size: 35px;
+}
+#wrapper_navigation .fa-file-text-o:before{
+position: relative;
+  left: -34px;
+  left: -15px;
+  font-size: 35px;
+}
+}
+/*        this is for mobile */
+
+
+/******************** css for future_evacuation  *****************/
+#wrapper_future_evacuation header {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #75a9f9;
+  width: 100%;
+  margin: 0px;
+  line-height: 685%;
+ font-size: 165%;
+ color: white;
+}
+#wrapper_future_evacuation body {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+}
+
+
+#wrapper_future_evacuation {
+  width: 90%;
+  margin: auto;
+}
+#wrapper_future_evacuation .form-control{
+  margin: auto;
+  width: 84%;
+  height: 14vw;
+  font-size: 5vw;
+   margin-top: 47px;
+   text-align: right;
+
+}
+#wrapper_future_evacuation main{
+  position: relative;
+  top: 2vw;
+}
+#wrapper_future_evacuation .btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 46vw;
+  height: 9vw;
+  top: 100px;
+  font-size: 4vw;
+}
+
+
+
+/* #map{
+  height: 500px;
+  width: 100%;
+} */

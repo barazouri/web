@@ -28,7 +28,7 @@ function createUser(){
         name.id="userName";
         name.innerText="עמית דקל\nג׳יפ";
         us.id="userImg"
-        us.setAttribute("src", "../images/user.png");
+        us.setAttribute("src", "images/user.png");
         document.getElementById("user").appendChild(us);
         document.getElementById("user").appendChild(name);
 
@@ -37,13 +37,13 @@ window.onload=function(){
     
     var park1=document.createElement("img");
     park1.id="park1"
-    park1.setAttribute("src", "../images/park.png");
+    park1.setAttribute("src", "images/park.png");
     var park2=document.createElement("img");
     park2.id="park2"
-    park2.setAttribute("src", "../images/park.png");
+    park2.setAttribute("src", "images/park.png");
     var park3=document.createElement("img");
     park3.id="park3";
-    park3.setAttribute("src", "../images/park.png");
+    park3.setAttribute("src", "images/park.png");
     document.getElementById("myMain").appendChild(park1);
     document.getElementById("myMain").appendChild(park2);
     document.getElementById("myMain").appendChild(park3);
@@ -53,7 +53,7 @@ function buttonClick(){
     document.getElementById("btn-secondary").remove();
     var thanks=document.createElement("img");
     thanks.id="thanks";
-    thanks.setAttribute("src", "../images/thanks.png");
+    thanks.setAttribute("src", "images/thanks.png");
     document.getElementById("myMain").appendChild(thanks);
     addPointsOfUser();
 }

@@ -1,24 +1,22 @@
-
-var array = ["חניון פרטי 30 שח 160 מטר מהיעד", "חניה כחול לבן 50 מטר מהיעד", "חניון אחוזת חוף 100 מטר מהיעד",
-"חניה באפור 30 מטר מהיעד", "חניה עד 12 כחול לבן"];
-
-
-window.onload= function() {
-    for (var i = 0; i < array.length; i++) {
+var parks=5;
+$(document).ready(function() {
+    var json_data=[];
+    $.getJSON("data/colect_park_data.json",function(data){
+        json_data=data;
+    for (row of json_data) {
         var l=document.createElement("li");
-        l.innerText=array[i];
+        l.innerText=row.street;
         var a=document.createElement("a");
         a.href =  "navigation.html"; // Insted of calling setAttribute
         // location.href = "index.html?Key="+true;
         a.style.textDecoration = "none";
         a.style.listStyle = "none";
         a.appendChild(l);
-        
-        if(i % 2 == 0)
+        if(row.id % 2 == 0)
             l.style.backgroundColor = '#ffffff';
         else
             l.style.backgroundColor = '#e0e0e0';
-
+        
             l.style.textAlign = "center";
             l.style.verticalAlign = "middle";
             l.style.width = "100%";
@@ -28,4 +26,9 @@ window.onload= function() {
             l.style.color="black";
             document.getElementById("myList").appendChild(a);
     }
-  };
+  })
+});
+
+// $.getJSON("data/colect_park_data.json",function(data){
+//     var x= {id:1,street:"חניון פרטי 30 שח 160 מטר מהיעד"}
+//     data.push(x);
