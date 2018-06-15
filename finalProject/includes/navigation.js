@@ -64,3 +64,21 @@ function addPointsOfUser(){
     document.getElementById("myMain").appendChild(points);
 
 }
+
+function initMap(){
+    var location = {lat: -25.363, lng:131.044};
+    var map=new google.maps.Map(document.getElementById("map"),{
+    zoom: 15,
+    center:location
+    });
+    navigator.geolocation.getCurrentPosition(function(position){ 
+        var currentLatitude = position.coords.latitude;
+        var currentLongitude = position.coords.longitude;
+
+        var infoWindowHTML = "Latitude: " + currentLatitude + "<br>Longitude: " + currentLongitude;
+        var infoWindow = new google.maps.InfoWindow({map: map, content: infoWindowHTML});
+        var currentLocation = { lat: currentLatitude, lng: currentLongitude };
+        infoWindow.setPosition(currentLocation);
+    }); 
+}
+

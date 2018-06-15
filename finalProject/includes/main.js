@@ -55,10 +55,10 @@ $("#btn-secondary").click(function buttonClick(){
     thanks.id="thanks";
     thanks.setAttribute("src", "images/thanks.png");
     document.getElementById("myMain").appendChild(thanks);
-    // $.getJSON("data/colect_park_data.json",function(data){
-    //     var x= {id:6,street:"כחול לבן  40 מטר מטר מהיעד**"};
-    //     data.push(x);
-    // });
+   $.getJSON("data/colect_park_data.json",function(data){
+    // var x= {id:6,street:"חניון פרטי 30 שח 160 מטר מהיעד"}
+    data.push({id:6,street:"חניון פרטי 30 שח 160 מטר מהיעד"});
+});
     addPointsOfUser();
 });
 function addPointsOfUser(){
@@ -69,10 +69,33 @@ function addPointsOfUser(){
 
 }
 
-// function initMap(){
-//     var location = {lat: -25.363, lng:131.044};
-//     var map=new google.maps.Map(document.getElementById("map"),{
-//     zoom: 4,
-//     center:location
-//     });
+function initMap(){
+    var location = {lat: -25.363, lng:131.044};
+    var map=new google.maps.Map(document.getElementById("map"),{
+    zoom: 15,
+    center:location
+    });
+		navigator.geolocation.getCurrentPosition(function(position){ 
+			var currentLatitude = position.coords.latitude;
+			var currentLongitude = position.coords.longitude;
+
+			var infoWindowHTML = "Latitude: " + currentLatitude + "<br>Longitude: " + currentLongitude;
+			var infoWindow = new google.maps.InfoWindow({map: map, content: infoWindowHTML});
+			var currentLocation = { lat: currentLatitude, lng: currentLongitude };
+			infoWindow.setPosition(currentLocation);
+        });
+}
+
+// function locate(){
+// 	if ("geolocation" in navigator){
+// 		navigator.geolocation.getCurrentPosition(function(position){ 
+// 			var currentLatitude = position.coords.latitude;
+// 			var currentLongitude = position.coords.longitude;
+
+// 			var infoWindowHTML = "Latitude: " + currentLatitude + "<br>Longitude: " + currentLongitude;
+// 			var infoWindow = new google.maps.InfoWindow({map: map, content: infoWindowHTML});
+// 			var currentLocation = { lat: currentLatitude, lng: currentLongitude };
+// 			infoWindow.setPosition(currentLocation);
+// 		});
+// 	}
 // }

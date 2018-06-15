@@ -10,14 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="includes/main.css" />
     <script src="includes/navigation.js" async></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3BL5oY5o2gqffLKY2FAT-CfTV8Hsw4HQ&callback=initMap"
+    type="text/javascript"></script>
     
 </head>
 <body>
 <div id="wrapper_navigation">
   <main id="myMain">
-        <div class="vl"></div>
-        <div class="vl1"></div>
-      <section class="turn">עוד 200 מטר פנה שמאלה לחניה <i class="fa fa-reply" aria-hidden="true"></i>
+        <div id="map"></div>
+        <!-- <div class="vl"></div>
+        <div class="vl1"></div> -->
+      <!-- <section class="turn">עוד 200 מטר פנה שמאלה לחניה <i class="fa fa-reply" aria-hidden="true"></i> -->
       </section>
       <button type="button" id="btn-secondary" class="btn btn-secondary" onclick="buttonClick()">דווח על חניה</button>
         <nav role="navigation">
@@ -52,13 +55,13 @@
                   </ul>
                 </div>
               </nav>
-              <button type="button" class="btn btn-dark">10:45<br>ק״מ 0.1 &nbsp;דק׳ 1</button>
+              <!-- <button type="button" class="btn btn-dark">10:45<br>ק״מ 0.1 &nbsp;דק׳ 1</button> -->
   </main>
 
     
    
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>

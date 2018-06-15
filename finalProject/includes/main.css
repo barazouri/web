@@ -98,9 +98,13 @@
       height: 100px;
     } */
     #wrapper_index main{
-          width: 100%;
+          width: 90%;
           height: 1149px;
-          background: url("../images/bigger\ map.png");
+      }
+      #wrapper_index #map{
+        position: absolute;
+        height: 1149px;
+        width: 90%;        
       }
       #wrapper_index .btn-secondary{
         position: absolute;
@@ -313,8 +317,13 @@
     #wrapper_index main{
           width: 100%;
           height: 735px;
-          background: url("../images/clean\ map.png")no-repeat;
       }
+      #wrapper_index #map{
+        position: absolute;
+        height: 735px;
+        width: 90%;
+      }
+      
       #wrapper_index .btn-secondary{
         position: absolute;
         left: 293px;
@@ -340,7 +349,7 @@
       width: 300px;
       position: absolute;
       left: 97px;
-      top: 31px;
+      top: 51px;
       font-family: 'Heebo';
     }
     #wrapper_index #user{
@@ -715,7 +724,11 @@ display: contents;
     #wrapper_navigation main{
           width: 100%;
           height: 1149px;
-          background: url("../images/bigger\ map.png");
+      }
+      #wrapper_navigation #map{
+        position: absolute;
+        height: 1149px;
+        width: 90%;
       }
       #wrapper_navigation .btn-secondary{
         position: absolute;
@@ -965,7 +978,11 @@ display: contents;
     #wrapper_navigation main{
           width: 100%;
           height: 735px;
-          background: url("../images/clean\ map.png")no-repeat;
+      }
+      #wrapper_navigation #map{
+        position: absolute;
+        height: 735px;
+        width: 90%;
       }
       #wrapper_navigation .btn-secondary{
         position: absolute;
@@ -1262,10 +1279,3 @@ position: relative;
   top: 100px;
   font-size: 4vw;
 }
-
-
-
-/* #map{
-  height: 500px;
-  width: 100%;
-} */
