@@ -108,7 +108,7 @@
       }
       #wrapper_index .btn-secondary{
         position: absolute;
-        left: 551px;
+        left: 60%;
         top: 900px;
         font-size: 26px;
         height: 113px;
@@ -124,7 +124,7 @@
       padding: 7px;
       transform: rotate(135deg);
       -webkit-transform: rotate(135deg);
-      left: 76vw;
+      left: 71vw;
       top: 574px;
     }
     
@@ -187,7 +187,7 @@
   }
   #wrapper_index #menuToggle{
       display: block;
-      position: relative;
+      position: absolute;
       top: 922px;
       left: 76px;
       z-index: 1;
@@ -214,7 +214,7 @@
     height: 1150px;
     background-color: black;
     opacity: 0.5;
-    left: 74vw;
+    left: 69vw;
     top: 0px;
   }
   #wrapper_index #userName{
@@ -274,7 +274,7 @@
   }
   #wrapper_index #menuToggle input:checked{
     height: 1150px;
-    left: 408px;
+    left: 437px;
     top: -922px;
     width: 216px;
   }
@@ -326,7 +326,7 @@
       
       #wrapper_index .btn-secondary{
         position: absolute;
-        left: 293px;
+        left: 60%;
         top: 591px;
         height: 52px;
         width: 111px;
@@ -341,7 +341,7 @@
       padding: 7px;
       transform: rotate(135deg);
       -webkit-transform: rotate(135deg);
-      left: 75vw;
+      left: 72vw;
       top:360.5px;
     }
     
@@ -406,7 +406,7 @@
   #wrapper_index #menuToggle
   {
     display: block;
-    position: relative;
+    position: absolute;
     top: 600px;
     left: 50px;
     width: 100px;
@@ -440,7 +440,7 @@
     height: 721px;
     background-color: black;
     opacity: 0.5;
-    left: 74vw;
+    left: 69vw;
     top:0px;
   }
   #wrapper_index #userName{
@@ -496,7 +496,7 @@
   }
   #wrapper_index #menuToggle input:checked{
     height: 721px;
-    left: 251px;
+    left: 220px;
     top: -600px;
     width: 124px;
   }
@@ -712,6 +712,23 @@ display: contents;
 
 
 @media(min-width: 481px) and (max-width:850px){
+
+  #wrapper_navigation #floating-panel {
+    position: absolute;
+    top: 63px;
+    left: 32%;
+    z-index: 5;
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+
   #wrapper_navigation nav{
     display: block;
     width: 326px;
@@ -732,7 +749,7 @@ display: contents;
       }
       #wrapper_navigation .btn-secondary{
         position: absolute;
-        left: 551px;
+        left: 60%;
         top: 900px;
         font-size: 26px;
         height: 113px;
@@ -748,7 +765,7 @@ display: contents;
       padding: 7px;
       transform: rotate(135deg);
       -webkit-transform: rotate(135deg);
-      left: 76vw;
+      left: 72vw;
       top: 574px;
     }
     #wrapper_navigation #user{
@@ -801,7 +818,7 @@ display: contents;
   }
   #wrapper_navigation #menuToggle{
       display: block;
-      position: relative;
+      position: absolute;
       top: 922px;
       left: 76px;
       z-index: 1;
@@ -828,7 +845,7 @@ display: contents;
     height: 1150px;
     background-color: black;
     opacity: 0.5;
-    left: 74vw;
+    left: 69vw;
     top: 0px;
   }
   #wrapper_navigation #userName{
@@ -888,7 +905,7 @@ display: contents;
   }
   #wrapper_navigation #menuToggle input:checked{
     height: 1150px;
-    left: 408px;
+    left: 374px;
     top: -922px;
     width: 216px;
   }
@@ -966,6 +983,24 @@ display: contents;
 }
        /*this is for tablet*/
 @media(max-width:480px){
+
+  #wrapper_navigation #floating-panel {
+    position: absolute;
+    top: 56px;
+    left: 32%;
+    z-index: 5;
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+
+
   #wrapper_navigation nav{
     display: block;
     width: 326px;
@@ -986,7 +1021,7 @@ display: contents;
       }
       #wrapper_navigation .btn-secondary{
         position: absolute;
-        left: 320px;
+        left: 60%;
         top: 591px;
         height: 52px;
         width: 111px;
@@ -1001,7 +1036,7 @@ display: contents;
       padding: 7px;
       transform: rotate(135deg);
       -webkit-transform: rotate(135deg);
-      left: 75vw;
+      left: 72vw;
       top:360.5px;
     }
     #wrapper_navigation #user{
@@ -1059,7 +1094,7 @@ display: contents;
   #wrapper_navigation #menuToggle
   {
     display: block;
-    position: relative;
+    position: absolute;
     top: 600px;
     left: 50px;
     width: 100px;
@@ -1093,7 +1128,7 @@ display: contents;
     height: 721px;
     background-color: black;
     opacity: 0.5;
-    left: 74vw;
+    left: 69vw;
     top:0px;
   }
   #wrapper_navigation #userName{
@@ -1149,7 +1184,7 @@ display: contents;
   }
   #wrapper_navigation #menuToggle input:checked{
     height: 721px;
-    left: 251px;
+    left: 258px;
     top: -600px;
     width: 124px;
   }

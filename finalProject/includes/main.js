@@ -33,22 +33,22 @@ function createUser(){
         document.getElementById("user").appendChild(name);
 
 }
-window.onload=function(){
+// window.onload=function(){
     
-    var park1=document.createElement("img");
-    park1.id="park1"
-    park1.setAttribute("src", "images/park.png");
-    var park2=document.createElement("img");
-    park2.id="park2"
-    park2.setAttribute("src", "images/park.png");
-    var park3=document.createElement("img");
-    park3.id="park3";
-    park3.setAttribute("src", "images/park.png");
-    document.getElementById("myMain").appendChild(park1);
-    document.getElementById("myMain").appendChild(park2);
-    document.getElementById("myMain").appendChild(park3);
+//     var park1=document.createElement("img");
+//     park1.id="park1"
+//     park1.setAttribute("src", "images/park.png");
+//     var park2=document.createElement("img");
+//     park2.id="park2"
+//     park2.setAttribute("src", "images/park.png");
+//     var park3=document.createElement("img");
+//     park3.id="park3";
+//     park3.setAttribute("src", "images/park.png");
+//     document.getElementById("myMain").appendChild(park1);
+//     document.getElementById("myMain").appendChild(park2);
+//     document.getElementById("myMain").appendChild(park3);
 
-}
+// }
 $("#btn-secondary").click(function buttonClick(){
     document.getElementById("btn-secondary").remove();
     var thanks=document.createElement("img");
@@ -81,21 +81,9 @@ function initMap(){
 
 			var infoWindowHTML = "Latitude: " + currentLatitude + "<br>Longitude: " + currentLongitude;
 			var infoWindow = new google.maps.InfoWindow({map: map, content: infoWindowHTML});
-			var currentLocation = { lat: currentLatitude, lng: currentLongitude };
+            var currentLocation = { lat: currentLatitude, lng: currentLongitude };
+            var marker = new google.maps.Marker({position: currentLocation, map: map});
 			infoWindow.setPosition(currentLocation);
         });
 }
 
-// function locate(){
-// 	if ("geolocation" in navigator){
-// 		navigator.geolocation.getCurrentPosition(function(position){ 
-// 			var currentLatitude = position.coords.latitude;
-// 			var currentLongitude = position.coords.longitude;
-
-// 			var infoWindowHTML = "Latitude: " + currentLatitude + "<br>Longitude: " + currentLongitude;
-// 			var infoWindow = new google.maps.InfoWindow({map: map, content: infoWindowHTML});
-// 			var currentLocation = { lat: currentLatitude, lng: currentLongitude };
-// 			infoWindow.setPosition(currentLocation);
-// 		});
-// 	}
-// }

@@ -4,23 +4,28 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Easy park</title>
+    <script src="includes/jquery-3.1.1.min.js" ></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="includes/jquery-3.1.1.min.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="includes/main.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
+    <script src="includes/future_evacuation.js" async></script>
+
+
 </head>
 <body>
     <div id="wrapper_future_evacuation">
         <header>דיווח על פינוי עתידי</header>
         <main>
-            <form id="future_evacuation" name="future_evacuation" action="index.html" method="GET">
+            <form id="future_evacuation" name="future_evacuation" action="index.html" method="POST">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="inputAddress" placeholder="תאריך">
-                    <input type="text" class="form-control" id="inputAddress" placeholder="שעה">
-                    <input type="text" class="form-control" id="inputAddress" placeholder="כתובת">
+                    <input type="text" class="form-control" id="date" name="date" placeholder="תאריך">
+                    <input type="text" class="form-control" id="time" name="time" placeholder="שעה">
+                    <input type="text" class="form-control" id="address" name="address" placeholder="כתובת">
                     <button type="submit" class="btn btn-primary mb-2">אישור</button>
+                    <div id="loader"></div>
+
 
                 </div>
             </form>

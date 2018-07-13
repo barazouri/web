@@ -29,7 +29,3 @@ $(document).ready(function() {
   })
 });
 
-// $.getJSON("data/colect_park_data.json",function(data){
-//     var x= {id:1,street:"חניון פרטי 30 שח 160 מטר מהיעד"}
-//     data.push(x);
-// });

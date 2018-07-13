@@ -33,22 +33,22 @@ function createUser(){
         document.getElementById("user").appendChild(name);
 
 }
-window.onload=function(){
+// window.onload=function(){
     
-    var park1=document.createElement("img");
-    park1.id="park1"
-    park1.setAttribute("src", "images/park.png");
-    var park2=document.createElement("img");
-    park2.id="park2"
-    park2.setAttribute("src", "images/park.png");
-    var park3=document.createElement("img");
-    park3.id="park3";
-    park3.setAttribute("src", "images/park.png");
-    document.getElementById("myMain").appendChild(park1);
-    document.getElementById("myMain").appendChild(park2);
-    document.getElementById("myMain").appendChild(park3);
+//     var park1=document.createElement("img");
+//     park1.id="park1"
+//     park1.setAttribute("src", "images/park.png");
+//     var park2=document.createElement("img");
+//     park2.id="park2"
+//     park2.setAttribute("src", "images/park.png");
+//     var park3=document.createElement("img");
+//     park3.id="park3";
+//     park3.setAttribute("src", "images/park.png");
+//     document.getElementById("myMain").appendChild(park1);
+//     document.getElementById("myMain").appendChild(park2);
+//     document.getElementById("myMain").appendChild(park3);
 
-}
+// }
 function buttonClick(){
     document.getElementById("btn-secondary").remove();
     var thanks=document.createElement("img");
@@ -65,20 +65,39 @@ function addPointsOfUser(){
 
 }
 
-function initMap(){
-    var location = {lat: -25.363, lng:131.044};
-    var map=new google.maps.Map(document.getElementById("map"),{
-    zoom: 15,
-    center:location
+ function initMap() {
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var directionsService = new google.maps.DirectionsService;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: {lat: 37.77, lng: -122.447}
+        });
+        directionsDisplay.setMap(map);
+
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
+        document.getElementById('mode').addEventListener('change', function() {
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+        });
+      }
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        var selectedMode = document.getElementById('mode').value;
+        navigator.geolocation.getCurrentPosition(function(position){ 
+            var currentLatitude = position.coords.latitude;
+            var currentLongitude = position.coords.longitude;
+        directionsService.route({
+          origin: {lat: currentLatitude, lng: currentLongitude},  // Haight.
+          destination: {lat: 32.083861, lng: 34.775298},  // Ocean Beach.
+          // Note that Javascript allows us to access the constant
+          // using square brackets and a string value as its
+          // "property."
+          travelMode: google.maps.TravelMode[selectedMode]
+        }, function(response, status) {
+          if (status == 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
     });
-    navigator.geolocation.getCurrentPosition(function(position){ 
-        var currentLatitude = position.coords.latitude;
-        var currentLongitude = position.coords.longitude;
-
-        var infoWindowHTML = "Latitude: " + currentLatitude + "<br>Longitude: " + currentLongitude;
-        var infoWindow = new google.maps.InfoWindow({map: map, content: infoWindowHTML});
-        var currentLocation = { lat: currentLatitude, lng: currentLongitude };
-        infoWindow.setPosition(currentLocation);
-    }); 
-}
-
+      }
