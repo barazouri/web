@@ -1270,6 +1270,15 @@ position: relative;
 
 
 /******************** css for future_evacuation  *****************/
+#wrapper_future_evacuation #parks{
+  position: relative;
+  top: 126px;
+  font-size: 29px;
+}
+#wrapper_future_evacuation .fa{
+  position: absolute;
+  left: 71vw;
+}
 #wrapper_future_evacuation header {
   position: relative;
   text-align: center;

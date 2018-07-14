@@ -4,7 +4,7 @@ $(function() {
         var date = $("#date").val();
         var time = $("#time").val();
         var address = $("#address").val();
-        var dataString = 'time=' + time + '&date=' + date + '&address=' + address;//if desc is empty it will send empty string	
+        var dataString = 'time=' + time + '&date=' + date + '&address=' + address;
         console.log(dataString);
 
         $("#loader").show();
@@ -22,4 +22,25 @@ $(function() {
         });
         return false;
     });
-});
+       
+
+        $('li').click(function(e){
+            console.log("stuck");
+            var id=(parent.attr('id').replace('id_park_',''));
+            var data = 'id_park=' + id;
+            var parent= $(this).parent();
+            jQuery.support.cors = true;
+            $.ajax({
+                type: "POST",
+                url: "server/action.php",
+                data: data,
+                cache: true,
+                success: function(){
+                    parent.remove();
+                }  
+            });
+
+            });
+     
+     });
+

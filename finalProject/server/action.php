@@ -1,19 +1,13 @@
 <?php
-	$dbhost = "182.50.133.51";
-	$dbuser = "studDB18A";
-	$dbpass = "stud18aDB1!";
-	$dbname = "studDB18A";
-	$conn =  mysqli_connect ($dbhost, $dbuser, $dbpass, $dbname);
-	if (!$conn) {
-		die("Connection failed: " . mysqli_connect_error());
-	}
+include('db.php');
 
-	$query = "SELECT * FROM easy_park_db order by time";
+	$query = "SELECT * FROM easy_park_db";
 	$result = mysqli_query($conn, $query);
-	if(!$result){
-		die("DB query failed.");
+	if(!$result) {
+		die("DB query failed select.");
 	}
-	if(isset(($_POST["time"]))&& isset($_POST["date"]) && isset($_POST["address"]))
+	
+	if((isset($_POST["time"])) && (isset($_POST["date"])) && (isset($_POST["address"])))
 	{
 		$time = $_POST["time"];
 		$date = $_POST["date"];
@@ -21,25 +15,43 @@
 
 		$query1 = "INSERT INTO easy_park_db (time_park, date_park, address_park)
 		VALUES ('$time', '$date', '$address')";
-		$result = mysqli_query($connection, $query1);
+		$result = mysqli_query($conn, $query1);
 
 		if(!$result){
-			die("DB query failed.");
+			die("DB query failed. insert");
 		}
 
-		$query1 = "SELECT * FROM easy_park_db order by time";
-		$result = mysqli_query($connection, $query1);
+		$query1 = "SELECT * FROM easy_park_db";
+		$result = mysqli_query($conn, $query1);
 
 		if(!$result){
-			die("DB query failed.");
+			die("DB query failed. ");
 		}
 		
 	}
-	echo "<ul";
-	while($row = mysqli_fetch_assoc($result)){
-			echo "<li><h2>" .'time:' .$row["time_park"]. 'date:' .$row["date_park"]. 'address:' .$row["address_park"]."</h2></li>";
+	else if(isset($_POST["id_park"]))
+	{
+		$id_park = (int)$_POST["id_park"];
+		$query2= "DELETE FROM easy_park_db WHERE id_park = '$id_park'";
+		$result = mysqli_query($conn, $query2);
+		if(!$result){
+			die("DB query failed. delete");
 		}
-	echo "</ul>";
+
+		$query2 = "SELECT * FROM easy_park_db"; 
+		$result = mysqli_query($conn, $query2);
+
+		if(!$result){
+			die("DB query failed. ");
+		}
+	}
+	$i=1;
+	echo '<ol id="parks">';
+	while($row = mysqli_fetch_assoc($result)){
+			echo "<li id='id_park_".$row["id_park"]."'> <div class='garbage'> <i class='fa fa-trash' aria-hidden='true'></i></div> <h2>".'time:' .$row["time_park"].'<br>'.'date: ' .$row["date_park"].'<br>'. 'address: ' .$row["address_park"].'<br>'.'<br>'."</h2></li>";
+			$i++;
+		}
+	echo "</ol>";
 		
 	mysqli_free_result($result);	
 	mysqli_close($conn);
