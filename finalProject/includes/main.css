@@ -98,7 +98,7 @@
       height: 100px;
     } */
     #wrapper_index main{
-          width: 90%;
+          width: 100vw;
           height: 1149px;
       }
       #wrapper_index #map{
@@ -595,7 +595,6 @@ display: contents;
 #wrapper_check .blueArea p {
 	position: relative;
 	top:30px;
-	font-size: 165%;
 	left: 5%;
 	font-family: verdana;
 	color: #ffffff;
@@ -607,7 +606,6 @@ display: contents;
 }
 
 #wrapper_check .viLogo {
-	font-size: 850%;
 	color: #61cc73;
 }
 
@@ -743,12 +741,9 @@ display: contents;
     width: 326px;
     height: 721px;
   }
-    /* form{
-      width: 100px;
-      height: 100px;
-    } */
+   
     #wrapper_navigation main{
-          width: 100%;
+          width: 100vw;
           height: 1149px;
       }
       #wrapper_navigation #map{

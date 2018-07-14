@@ -7,6 +7,8 @@ function clickCheckBox(){
          document.getElementById("myMain").appendChild(arrowLeft);
         createUser();
         bottomForCloseHam();
+        $("#floating-panel").hide()
+
     }
     else if(!inp.checked){
         document.getElementById("mySection").remove();
@@ -14,6 +16,8 @@ function clickCheckBox(){
         document.getElementById("menu").style.visibility="hidden";
         document.getElementById("userImg").remove();
         document.getElementById("userName").remove();
+        $("#floating-panel").show()
+
     }
 }
 

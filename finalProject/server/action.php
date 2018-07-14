@@ -48,7 +48,7 @@ include('db.php');
 	$i=1;
 	echo '<ol id="parks">';
 	while($row = mysqli_fetch_assoc($result)){
-			echo "<li> <button id='$row[id_park]' class='delete' type='button'> <i class='fa fa-trash' aria-hidden='true'></i></button><h2>".'time:' .$row["time_park"].'<br>'.'date: ' .$row["date_park"].'<br>'. 'address: ' .$row["address_park"].'<br>'.'<br>'."</h2></li>";
+			echo "<li> <button id='$row[id_park]' class='delete' type='button'> <i class='fa fa-trash' aria-hidden='true'></i></button><h2>".'time: '.$row["time_park"].'<br>'.'date: ' .$row["date_park"].'<br>'. 'address: ' .$row["address_park"].'<br>'.'<br>'."</h2></li>";
 			$i++;
 		}
 	echo "</ol>";
