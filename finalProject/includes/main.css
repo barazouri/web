@@ -612,32 +612,41 @@ display: contents;
 }
 
 #wrapper_check .positiveCheck {
-	position: relative;
-	color: #61cc73;
+  position: relative;
+  color: #61cc73;
+  top: 73px;
+
+
 }
 
 #wrapper_check .attension {
-	position: relative;
-	top: 0px;
-	color: #bf2a1c;
-	font-size: 250%;
+  position: relative;
+  top: 170px;
+  color: #bf2a1c;
+  font-size: 70px;
 }
 
 #wrapper_check .parkingTime {
-	font-size: 150%;
+  position: relative;
+  top: 200px;
 }
-
+.fa-check-circle:before {
+  content: "\f058";
+  position: relative;
+  top: 14px;
+  font-size: 300px;
+}
 #wrapper_check #btn-secondary {
-	position: relative;
-    font-family: verdana;
-    font-size: 20px;
-    width: 28%;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #e6e6e6;
-    color: #000;
-    top: 25px;
-	text-align: center;
+  position: relative;
+  font-family: verdana;
+  font-size: 30px;
+  width: 28vw;
+  height: 69px;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+  color: #000;
+  top: 300px;
+  text-align: center;
 }
 
 /*********************************  css for navigation  **********************************/
@@ -1322,4 +1331,12 @@ position: relative;
   height: 9vw;
   top: 100px;
   font-size: 4vw;
+}
+
+#wrapper_future_evacuation .delete{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    outline:none;
+
 }

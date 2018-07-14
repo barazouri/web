@@ -7,8 +7,6 @@ $(function() {
         var dataString = 'time=' + time + '&date=' + date + '&address=' + address;
         console.log(dataString);
 
-        $("#loader").show();
-        $("#loader").fadeIn(300).html('<span class="loading">Loading..</span>');
         jQuery.support.cors = true;
         $.ajax({
             type: "POST",
@@ -16,31 +14,31 @@ $(function() {
             data: dataString,
             cache: true,
             success: function(html){
-                $("#loader").after(html);
-                $("#loader").hide();
+                $("#future_evacuation").after(html);
+                $('.delete').click(deletePark);
             }  
         });
         return false;
     });
-       
+        });
 
-        $('li').click(function(e){
+        function deletePark(){
             console.log("stuck");
-            var id=(parent.attr('id').replace('id_park_',''));
-            var data = 'id_park=' + id;
             var parent= $(this).parent();
+            var id=$(this).attr("id");
             jQuery.support.cors = true;
             $.ajax({
                 type: "POST",
                 url: "server/action.php",
-                data: data,
+                data: {id_park: id},
                 cache: true,
                 success: function(){
                     parent.remove();
+                    $('.delete').click(deletePark);
+
                 }  
             });
 
-            });
+            }
      
-     });
-
+        
